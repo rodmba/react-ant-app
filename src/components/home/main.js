@@ -10,13 +10,7 @@ export default class Main extends Component {
   render() {
     return (
       <Content className="main">
-        <Route
-          path="/"
-          exact
-          render={() => (
-            <div>Arch & In | Projetos online de arquitetura e interiores</div>
-          )}
-        />
+        <Route path="/" exact render={() => <div>app-home</div>} />
         <Route path="/projects" component={Projects} />
         <Route path="/user" component={User} />
         <Route path="/notifications" component={Notifications} />

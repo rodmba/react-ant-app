@@ -1,5 +1,5 @@
 {
-  "name": "archin",
+  "name": "app-name",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://rodmba.github.io/react-ant-app/",
@@ -22,7 +22,7 @@
     "watch-css":
       "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-app-rewired start",
-    "start": "npm-run-all -p watch-css",
+    "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-app-rewired build",
     "build": "npm-run-all build-css build-js",
     "test": "react-app-rewired test --env=jsdom",
@@ -32,7 +32,7 @@
     "eslint-check":
       "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
