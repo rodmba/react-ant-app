@@ -1,0 +1,19 @@
+{
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["prettier", "prettier/react"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/display-name": 0,
+    "react/prop-types": 0
+  }
+}
